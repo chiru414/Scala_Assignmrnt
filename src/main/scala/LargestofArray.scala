@@ -3,6 +3,7 @@ object LargestofArray {
   def main(args: Array[String]): Unit = {
     var arr = Array(2,5,8,4,9)
     println(arr.reduceLeft(largest))
+    println("End of the main class")
   }
 
   def largest(a: Int, b :Int):Int = {
