@@ -2,6 +2,12 @@
 object LargestofArray {
   def main(args: Array[String]): Unit = {
     var arr = Array(2,5,8,4,9)
-    println(arr.reduceLeft(_ max _))
+    println(arr.reduceLeft(largest))
+  }
+
+  def largest(a: Int, b :Int):Int = {
+    val tmp = a max b
+    println("compared %d with %d, %d was larger".format(a,b,tmp))
+    tmp
   }
 }
